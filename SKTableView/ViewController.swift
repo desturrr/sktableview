@@ -16,7 +16,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let productModel = ProductModel(productName: "Cubbuk", productPrice: "5 kurus")
-        let productData = SKTableData(models: [productModel])
+        let productModel2 = ProductModel(productName: "Kemal pasa tatlisi", productPrice: "51 kurus")
+
+        let productHeaderModel = ProductHeaderModel(title: "Recolar Burada")
+        let productData = SKTableData(models: [productModel,productModel2], headerModel: productHeaderModel)
+
         self.skTableView.buildTableDatas(tableDatas: [productData])
     }
 }

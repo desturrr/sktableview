@@ -31,6 +31,30 @@ class SKTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
         self.registerTableModels(tableDatas: tableDatas)
     }
 
+    public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return self.tableDatas[section].headerModel?.viewHeight() ?? 0.0
+    }
+
+    public func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return self.tableDatas[section].footerModel?.viewHeight() ?? 0.0
+    }
+
+    public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?
+    {
+        guard let headerModel = self.tableDatas[section].headerModel else { return nil }
+        let headerView = Bundle.main.loadNibNamed(headerModel.viewTypeIdentifier(), owner: nil)![0] as! SKTableReusableView
+        headerView.applyReusableModel(reusableModel: headerModel)
+        return headerView
+    }
+
+    public func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView?
+    {
+        guard let footerModel = self.tableDatas[section].footerModel else { return nil }
+        let footerView = Bundle.main.loadNibNamed(footerModel.viewTypeIdentifier(), owner: nil)![0] as! SKTableReusableView
+        footerView.applyReusableModel(reusableModel: footerModel)
+        return footerView
+    }
+
     public func numberOfSections(in tableView: UITableView) -> Int {
         return self.tableDatas.count
     }

@@ -25,11 +25,14 @@
 		88C2ABA50FA7FF35C6CE6D2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C2AA65D3EB02779ACA18A0 /* LaunchScreen.storyboard */; };
 		88C2AD5966DAED036E471531 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88C2A4577BAAD34F88BA5282 /* Info.plist */; };
 		88C2AD9A6578FB951F184A6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88C2AAE0F71F4D27D2F56C52 /* Assets.xcassets */; };
+		88C2AE33F22EC3585ABC0C41 /* ProductHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C2AC77B31D77251A81E723 /* ProductHeaderView.swift */; };
 		88C2AEBB0F34649C6E35EB30 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88C2A86B568756ADD2061F47 /* Info.plist */; };
+		88C2AEC471F952B7F61FC225 /* ProductHeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C2A1F8BCC300B3AD46168C /* ProductHeaderModel.swift */; };
 		88C2AF95496A95AC9245A51B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C2A23B5C8E0BB1A8DEA1C6 /* Main.storyboard */; };
 		88C2AFAC0A8B4FB5EE8C0C53 /* SKTableReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C2A7A1A650D92783E073C5 /* SKTableReusableView.swift */; };
 		E218C4CF1E9CC04000F6AD34 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218C4CE1E9CC04000F6AD34 /* ProductModel.swift */; };
 		E218C4D11E9CC52900F6AD34 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E218C4D01E9CC52900F6AD34 /* ProductCell.xib */; };
+		E218C4D31E9CFA5F00F6AD34 /* ProductHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E218C4D21E9CFA5F00F6AD34 /* ProductHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		88C2A0E9257092E744EAD6BA /* SKTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88C2A1F8BCC300B3AD46168C /* ProductHeaderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductHeaderModel.swift; sourceTree = "<group>"; };
 		88C2A1FD5F48F3F643D141CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88C2A26DC81B78352728E208 /* SKTableReusableViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTableReusableViewProtocol.swift; sourceTree = "<group>"; };
 		88C2A4577BAAD34F88BA5282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -73,9 +77,11 @@
 		88C2ABBA5E3D83AF3548DDAA /* SKTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKTableViewUITests.swift; sourceTree = "<group>"; };
 		88C2ABEDF4EFE40CDDBD0C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		88C2AC5342148F3431E1559E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88C2AC77B31D77251A81E723 /* ProductHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductHeaderView.swift; sourceTree = "<group>"; };
 		88C2ACDEF5A76638CB1DF9A1 /* SKTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKTableViewTests.swift; sourceTree = "<group>"; };
 		E218C4CE1E9CC04000F6AD34 /* ProductModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		E218C4D01E9CC52900F6AD34 /* ProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		E218C4D21E9CFA5F00F6AD34 /* ProductHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProductHeaderView.xib; path = SKTableViewFramework/ProductHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +185,9 @@
 				E218C4CE1E9CC04000F6AD34 /* ProductModel.swift */,
 				88C2AA6A817F0F7C550D4491 /* ProductCell.swift */,
 				E218C4D01E9CC52900F6AD34 /* ProductCell.xib */,
+				88C2A1F8BCC300B3AD46168C /* ProductHeaderModel.swift */,
+				88C2AC77B31D77251A81E723 /* ProductHeaderView.swift */,
+				E218C4D21E9CFA5F00F6AD34 /* ProductHeaderView.xib */,
 			);
 			path = SKTableView;
 			sourceTree = "<group>";
@@ -276,6 +285,7 @@
 				E218C4D11E9CC52900F6AD34 /* ProductCell.xib in Resources */,
 				88C2ABA50FA7FF35C6CE6D2D /* LaunchScreen.storyboard in Resources */,
 				88C2AF95496A95AC9245A51B /* Main.storyboard in Resources */,
+				E218C4D31E9CFA5F00F6AD34 /* ProductHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +334,8 @@
 				88C2A6B7EA3AD31AE1054704 /* SKTableModelProtocol.swift in Sources */,
 				88C2AAE893219852DB7CC99F /* SKTableCellProtocol.swift in Sources */,
 				88C2A055178E93550B84137F /* ProductCell.swift in Sources */,
+				88C2AEC471F952B7F61FC225 /* ProductHeaderModel.swift in Sources */,
+				88C2AE33F22EC3585ABC0C41 /* ProductHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
