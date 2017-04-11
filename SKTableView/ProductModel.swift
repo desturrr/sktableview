@@ -12,11 +12,13 @@ class ProductModel: SKTableModel
 {
     var productName: String
     var productPrice: String
+    var picture: String
 
-    init(productName: String, productPrice: String)
+    init(productName: String, productPrice: String, picture: String)
     {
         self.productName = productName
         self.productPrice = productPrice
+        self.picture = picture
     }
 
     override func cellType() -> SKTableCell.Type {

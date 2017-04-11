@@ -16,34 +16,44 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d7q-xc-xTw" id="rFh-CY-jqY">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="98.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="98"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqs-yY-Tvl" userLabel="productName">
-                        <rect key="frame" x="63" y="8" width="42" height="21"/>
+                        <rect key="frame" x="18" y="8" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pL-jC-ghz" userLabel="productPrice">
-                        <rect key="frame" x="63" y="45" width="42" height="21"/>
+                        <rect key="frame" x="18" y="45" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GNf-6q-Z3q">
+                        <rect key="frame" x="286" y="8" width="81" height="82"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="81" id="PbX-ab-8hP"/>
+                            <constraint firstAttribute="height" constant="82" id="RcG-Ao-WJX"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="topMargin" secondItem="oqs-yY-Tvl" secondAttribute="top" id="Ba3-Y6-zPy"/>
+                    <constraint firstItem="GNf-6q-Z3q" firstAttribute="centerY" secondItem="rFh-CY-jqY" secondAttribute="centerY" id="EXD-3E-w5a"/>
                     <constraint firstItem="2pL-jC-ghz" firstAttribute="leading" secondItem="oqs-yY-Tvl" secondAttribute="leading" id="GaF-F7-KVn"/>
                     <constraint firstItem="2pL-jC-ghz" firstAttribute="top" secondItem="oqs-yY-Tvl" secondAttribute="bottom" constant="16" id="U1h-Sv-ts8"/>
-                    <constraint firstItem="oqs-yY-Tvl" firstAttribute="leading" secondItem="rFh-CY-jqY" secondAttribute="leadingMargin" constant="55" id="gRf-oh-jAl"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="GNf-6q-Z3q" secondAttribute="trailing" id="fdi-7w-OsX"/>
+                    <constraint firstItem="oqs-yY-Tvl" firstAttribute="leading" secondItem="rFh-CY-jqY" secondAttribute="leadingMargin" constant="10" id="gRf-oh-jAl"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="imageViewProduct" destination="GNf-6q-Z3q" id="6RU-Cl-A0n"/>
                 <outlet property="labelProductName" destination="oqs-yY-Tvl" id="jN9-ZD-6Um"/>
                 <outlet property="labelProductPrice" destination="2pL-jC-ghz" id="r5f-ba-tqx"/>
             </connections>
-            <point key="canvasLocation" x="-86.5" y="-113.5"/>
+            <point key="canvasLocation" x="-177.5" y="-178.5"/>
         </tableViewCell>
     </objects>
 </document>

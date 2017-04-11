@@ -9,11 +9,13 @@ class ProductCell: SKTableCell {
     
     @IBOutlet weak var labelProductName: UILabel!
     @IBOutlet weak var labelProductPrice: UILabel!
+    @IBOutlet weak var imageViewProduct: UIImageView!
     
     override func applyModel(tableModel: SKTableModel) {
         super.applyModel(tableModel: tableModel)
         self.labelProductName.text = self.getCellModel().productName
         self.labelProductPrice.text = self.getCellModel().productPrice
+        self.imageViewProduct.image = UIImage(named: self.getCellModel().picture)!
     }
 
     private func getCellModel() -> ProductModel {
