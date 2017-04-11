@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="99" id="d7q-xc-xTw" customClass="ProductCell" customModule="SKTableView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d7q-xc-xTw" id="rFh-CY-jqY">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="98.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqs-yY-Tvl" userLabel="productName">
+                        <rect key="frame" x="63" y="8" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pL-jC-ghz" userLabel="productPrice">
+                        <rect key="frame" x="63" y="45" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="topMargin" secondItem="oqs-yY-Tvl" secondAttribute="top" id="Ba3-Y6-zPy"/>
+                    <constraint firstItem="2pL-jC-ghz" firstAttribute="leading" secondItem="oqs-yY-Tvl" secondAttribute="leading" id="GaF-F7-KVn"/>
+                    <constraint firstItem="2pL-jC-ghz" firstAttribute="top" secondItem="oqs-yY-Tvl" secondAttribute="bottom" constant="16" id="U1h-Sv-ts8"/>
+                    <constraint firstItem="oqs-yY-Tvl" firstAttribute="leading" secondItem="rFh-CY-jqY" secondAttribute="leadingMargin" constant="55" id="gRf-oh-jAl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelProductName" destination="oqs-yY-Tvl" id="jN9-ZD-6Um"/>
+                <outlet property="labelProductPrice" destination="2pL-jC-ghz" id="r5f-ba-tqx"/>
+            </connections>
+            <point key="canvasLocation" x="-86.5" y="-113.5"/>
+        </tableViewCell>
+    </objects>
+</document>
