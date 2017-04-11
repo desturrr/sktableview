@@ -17,6 +17,11 @@ class SKTableModel: SKTableModelProtocol
         return cellTypeName.components(separatedBy: ".").last!
     }
 
+    func onCellSelected(selectionBlock: @escaping SKVoidBlock)
+    {
+        self.selectionBlock = selectionBlock
+    }
+
     func cellHeight() -> CGFloat {
         fatalError("Cell height have to be implemented.")
     }

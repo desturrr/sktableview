@@ -78,6 +78,11 @@ class SKTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
         return tableModel.cellHeight()
     }
 
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let tableModel = self.getModelAtIndexPath(indexPath: indexPath)
+        tableModel.selectionBlock?()
+    }
+
     private func registerTableModels(tableDatas:[SKTableData])
     {
         tableDatas.forEach { (tableData: SKTableData) in

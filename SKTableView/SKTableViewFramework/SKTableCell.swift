@@ -11,6 +11,7 @@ class SKTableCell: UITableViewCell, SKTableCellProtocol
 
     func applyModel(tableModel: SKTableModel) {
         self.model = tableModel
+        self.selectionStyle = UITableViewCellSelectionStyle.none
     }
 
     func getModel<T: SKTableModel>() -> T {

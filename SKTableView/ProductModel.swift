@@ -26,4 +26,9 @@ class ProductModel: SKTableModel
     override func cellHeight() -> CGFloat {
         return 99
     }
+
+    override func cellSelected() {
+        super.cellSelected()
+    }
+
 }

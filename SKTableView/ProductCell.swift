@@ -6,10 +6,8 @@
 import UIKit
 
 class ProductCell: SKTableCell {
-
     
     @IBOutlet weak var labelProductName: UILabel!
-    
     @IBOutlet weak var labelProductPrice: UILabel!
     
     override func applyModel(tableModel: SKTableModel) {
@@ -22,5 +20,4 @@ class ProductCell: SKTableCell {
         let model: ProductModel = super.getModel()
         return model
     }
-
 }
